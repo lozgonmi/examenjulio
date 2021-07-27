@@ -1,0 +1,12 @@
+<footer class="footer my-3 fixed-bottom mb-2">
+  <div class="container text-center">
+    <a *ngFor="let rs of rrss" class="btn btn-link" href="{{ rs.url }}" rel="noopener" target="_blank"><i
+        [ngClass]="rs.red.icono" title="{{ rs.red.nombre }}"></i></a>
+  </div>
+  <div class="row justify-content-center">
+    <a class="legal" routerLink="legal/privacidad">Privacidad</a><span> | </span>
+    <a class="legal" routerLink="legal/uso">Condiciones de Uso</a><span> | </span>
+    <a class="legal" routerLink="legal/cookies">Cookies</a>
+  </div>
+  <div class="text-center">© <a class="h4 title btn btn-link" routerLink="{{ webMarca }}">{{ marca }}</a></div>
+</footer>

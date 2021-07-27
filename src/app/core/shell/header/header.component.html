@@ -1,0 +1,119 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark align-items-center fixed-top">
+  <a class="nav-link" routerLink="/"><img src={{logo}} style="width: 50px;"><span class="sr-only">(current)</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsAgecal"
+    aria-controls="navbarsAgecal" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="hola">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown pt-3" routerLinkActive="router-link-active">
+        <a class="nav-link dropdown-toggle lera" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Tienda
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-warning" routerLink="pedidos">Pedidos</a>
+          <a class="dropdown-item text-warning" routerLink="personajes/formulario">Crear Personaje</a>
+        </div>
+
+      </li>
+    </ul>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarsAgecal">
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+    <div class="nav-item dropdown" routerLinkActive="router-link-active">
+      <a class="nav-link dropdown-toggle letra" id="navbarDropdown" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        Ayuda
+      </a>
+      <div class="dropdown-menu text-center mt-3 ventana" aria-labelledby="navbarDropdown">
+        <a target="_blank" href="{{documentacion}}" class="dropdown-item letra">Documentación Api</a>
+        <a target="_blank" href="{{swagger}}" class="dropdown-item letra">Swagger-ui</a>
+      </div>
+    </div>
+    <div>
+      <ul class="navbar-nav navbar-right mr-5">
+        <li class="dropdown order-1 "></li>
+        <button type="button" id="dropdownMenu1" data-toggle="dropdown"
+          class="btn btn-outline-warning dropdown-toggle">Login
+          <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-right pt-3 formato">
+          <li class="px-3 py-2">
+            El componenete para hacer Login
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="dropdown formato">
+      <a class="btn botonCard dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        nombre de Usuario
+      </a>
+      <div class="dropdown-menu formato" aria-labelledby="dropdownMenuLink">
+        <button class="dropdown-item " type="submit">Cerrar Sesión</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<!--<li class="nav-item dropdown pt-3 letra" routerLinkActive="router-link-active">
+          <a class="nav-link dropdown-toggle letra" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Gestión Cursos
+          </a>
+          <div class="dropdown-menu mt-2 formato" aria-labelledby="navbarDropdown" >
+            <a class="dropdown-item letra" routerLink="cursos">Cursos</a>
+            <a class="dropdown-item letra" routerLink="promociones">Promociones</a>
+          </div>
+        </li>-->
+
+<!--<li class="nav-item pt-3 letra"  routerLinkActive="router-link-active">
+            <a class=" nav-link disabled letra " routerLink="#">Promociones</a>
+        </li>
+        <li class="nav-item pt-3 letra">
+          <a class="nav-link disabled letra" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>-->
+
+<!--<ul class="navbar-nav navbar-right mr-5">
+        <li><a routerLink="#" class="btn btn-outline-warning text-warning">Log In</a></li>
+
+        <li class="dropdown">
+          <a class="btn btn-outline-warning dropdown-toggle" href="#" role="button"
+          id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </a>
+          <div class="dropdown-menu formato" aria-labelledby="dropdownMenuLink">
+             <button class="dropdown-item letra" type="">Cerrar Sesión</button>
+          </div>
+        </li>
+      </ul>-->
+
+
+
+
+<div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog margen">
+    <div class="modal-content borde">
+      <div class="modal-header cabecera">
+        <h3>Forgot password</h3>
+        <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body formato">
+        <p>Reset your password..</p>
+      </div>
+      <div class="modal-footer pie">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-warning">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

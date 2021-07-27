@@ -1,0 +1,23 @@
+footer a.btn, footer a.btn:hover, footer .legal, footer .legal:hover { color: inherit; }
+footer .legal { margin: 0 1rem; }
+footer a.btn-link { font-size: 1.6rem; }
+footer .title { border: none; }
+.btn-link .fa-facebook:hover { color: #3b5998; }
+.btn-link .fa-linkedin:hover { color: #01669e; }
+.btn-link .fa-github:hover { color: #000000; }
+.btn-link .fa-rss:hover { color: orange; }
+.btn-link .fa-instagram:hover { color: #e01ca6; }
+.btn-link .fa-blogger-b:hover { color: #f06a35; }
+.btn-link .fa-youtube:hover { color: #ff0000; }
+.btn-link .fa-snapchat-ghost:hover { color: #fffb3f; }
+.btn-link .fa-twitch:hover { color: #6441a5; }
+.btn-link .fa-twitter:hover { color: #2ac0fd; }
+.btn-link .fa-github:hover { color: #888888; }
+.btn-link .fa-gitlab:hover { color: #e24329; }
+.btn-link .fa-bitbucket:hover { color: #0052cc; }
+.btn-link .fa-wordpress:hover { color: #006897; }
+.btn-link .fa-magento:hover { color: #ec6737; }
+.btn-link .fa-whatsapp:hover { color: #38dc55; }
+.btn-link .fa-slack:hover { color:#ecb22e; }
+.btn-link .fa-envelope:hover { color:#087fe3; }
+.btn-link.title:hover { color: rgb(163, 0, 163); text-decoration: none; }

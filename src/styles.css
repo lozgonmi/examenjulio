@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #f2d7e4;
+}
+
+nav {
+  background: linear-gradient(to bottom,  #3c1053,  #ad5389 );
+}
+
+
