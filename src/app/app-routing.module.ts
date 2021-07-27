@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: () => import('src/app/pedidos/pedidos.module').then(m => m.PedidosModule)
   },
   {
+    path: 'localidades',
+    loadChildren: () => import('src/app/localidades/localidades.module').then(m => m.LocalidadesModule)
+  },
+  {
     path: 'not-found',
     component: NotFoundComponent
   },
