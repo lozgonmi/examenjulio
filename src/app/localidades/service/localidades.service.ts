@@ -41,4 +41,12 @@ export class LocalidadesService {
     return localidad;
 
   }
+  getLocalidadId(id): Observable<Localidad> {
+    console.log(id);
+    return this.http.get<Localidad>(`${this.urlLocalidades}${id}`)
+       }
+  putLocalidad(localidad: LocalidadImpl): Observable<any> {
+    return this.http.put<any>(`${this.urlLocalidades}${localidad.id}`, localidad)
+    
+  }
 }
