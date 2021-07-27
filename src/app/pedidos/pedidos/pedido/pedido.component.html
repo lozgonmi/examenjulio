@@ -1,7 +1,8 @@
 <div class="row">
     <div class="col-3   mt-3">{{pedido.fechaCreacion | titlecase}} </div>
     <div class="col-2  mt-3"> {{pedido.totalCierre }}</div>
-    <div class="col-2  mt-3"> {{nombre}}</div>
+    <div class="col-2  mt-3" > <button type="button" class="btn btn-success">
+      <a  [routerLink]="['/propietarios/propietario', pedido.id]" routerLinkActive="router-link-active">{{nombre}}</a></button></div>
     <div class="col-1"></div>
     
    

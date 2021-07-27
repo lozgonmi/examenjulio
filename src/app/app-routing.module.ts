@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('src/app/localidades/localidades.module').then(m => m.LocalidadesModule)
   },
   {
+    path: 'propietarios',
+    loadChildren: () => import('src/app/propietarios/propietarios.module').then(m => m.PropietariosModule)
+  },
+  {
     path: 'not-found',
     component: NotFoundComponent
   },

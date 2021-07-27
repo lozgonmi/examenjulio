@@ -17,9 +17,8 @@ export class PropietarioService {
 
   extraerNombrePropietario(respuestaApi: any): string {
     let nombre: string;
-    nombre = respuestaApi.nombre
-
-    
+    nombre = respuestaApi.nombre; 
     return nombre;
   }
+  
 }
