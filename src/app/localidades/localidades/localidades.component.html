@@ -1,6 +1,9 @@
 <div class="row">
     <div class="col-3 mx-2">Identificador</div>
-    <div class="col-2 mx-2">Nombre Localidad</div>      
+    <div class="col-2 mx-2">Nombre Localidad</div>   
+    <button  type="button" name="editar"  class="btn" [routerLink]="['/localidades/editar']"
+      routerLinkActive="router-link-active" >
+    Crear Localidad</button>
 </div>
     <hr class='w-100'>
     <div *ngFor='let localidad of localidades'>

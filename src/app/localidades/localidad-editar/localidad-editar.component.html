@@ -1,9 +1,13 @@
 <form #localidadForm="ngForm">
     <div class="form-row py-2">
-      <div class="col-lg-4 col-md-12">
+      <div class="col-lg-4 col-md-12" *ngIf="identificador!= null ; else nueva">Editar Localidad</div>
+      <ng-template #nueva>
+        <div class="col-lg-4 col-md-12">Nueva localidad</div>
+      </ng-template>
+
         <label>Nombre <sup class="text-danger">*</sup></label>
         <input type="text" class="form-control" [(ngModel)]="localidad.nombre" placeholder="Nombre Localidad" name="pers"
-          required minlength="3" #pers="ngModel" [ngClass]="{
+          required minlength="3" #nif="ngModel" #pers="ngModel" [ngClass]="{
             'is-invalid': pers.invalid && (pers.dirty || pers.touched),
             'is-valid': !pers.invalid
           }" />
@@ -15,16 +19,30 @@
             El Nombre de la Localidad debe tener al menos 3
           </div>
         </div>
-      </div>
+      
     </div>
     
      
     <div class="form-row justify-content-between pt-5">
       <div class="col-lg-5 col-md-12">
-        <button class="btn btn-primary" role="button" (click)="create()" routerLink='/localidades'
-          [disabled]="!localidadForm.form.valid">
-          Modificar Localidad
-        </button>
+
+        <button
+                  class="btn btn-primary"
+                  role="button"
+                  (click)="crearLocalidad()"
+                  routerLink='/localidades'
+                  *ngIf="!identificador else elseBlock" > Crear
+                </button>
+                  
+                
+                  <ng-template #elseBlock>
+                    <button class="btn btn-outline-warning" role="button"
+                    (click)='modificarLocalidad()'
+                    routerLink='/localidades'
+                      > Editar </button>
+                  </ng-template>
+
+        
       </div>
     </div>
   </form>

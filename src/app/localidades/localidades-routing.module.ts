@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'editar/:id',
     component: LocalidadEditarComponent
+  },
+  {
+    path: 'editar',
+    component: LocalidadEditarComponent
   }
 ];
 

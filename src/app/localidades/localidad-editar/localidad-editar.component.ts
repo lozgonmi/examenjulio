@@ -10,7 +10,8 @@ import { LocalidadesService } from '../service/localidades.service';
   ]
 })
 export class LocalidadEditarComponent implements OnInit {
-  public localidad: LocalidadImpl;
+  public localidad: LocalidadImpl =new LocalidadImpl();
+  
   public identificador: number;
 
   constructor(private localidadService: LocalidadesService,
@@ -29,11 +30,15 @@ export class LocalidadEditarComponent implements OnInit {
       }}
       )
     }
-  create(){
+  modificarLocalidad(){
     console.log(this.localidad)
     this.localidad.id = this.identificador;
   
     this.localidadService.putLocalidad(this.localidad).subscribe((response) =>console.log(response));
+  }
+  
+  crearLocalidad(){
+    this.localidadService.crearLocalidad(this.localidad).subscribe((response) =>console.log(response));;
   }
 
 }

@@ -49,4 +49,7 @@ export class LocalidadesService {
     return this.http.put<any>(`${this.urlLocalidades}${localidad.id}`, localidad)
     
   }
+  crearLocalidad(localidad: LocalidadImpl): Observable<any> {
+    return this.http.post(this.urlLocalidades, localidad)
+  }
 }
